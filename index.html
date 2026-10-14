@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación - Diseño y Desarrollo Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 700px;
+            background: #fff;
+            padding: 30px;
+            margin: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+        .question {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        .question p {
+            font-weight: bold;
+            color: #444;
+        }
+        label {
+            display: block;
+            margin: 5px 0;
+            cursor: pointer;
+        }
+        .student-info {
+            background: #eef2f7;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .student-info input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #resultado {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Módulo Formativo: Diseño y Desarrollo Web</h1>
+    <h2>Evaluación de Conocimientos (3er Año de Bachillerato)</h2>
+
+    <form id="evaluacionForm">
+        <div class="student-info">
+            <label for="nombre">Apellidos y Nombres del Estudiante:</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Ej. Pérez Juan">
+        </div>
+
+        <!-- Pregunta 1 -->
+        <div class="question" data-correcta="b">
+            <p>1. ¿Cuál es el principal propósito del cifrado?</p>
+            <label><input type="radio" name="p1" value="a" required> Acelerar la carga del sitio</label>
+            <label><input type="radio" name="p1" value="b"> Ocultar información para evitar accesos no autorizados</label>
+            <label><input type="radio" name="p1" value="c"> Mejorar el diseño visual</label>
+            <label><input type="radio" name="p1" value="d"> Reducir el tamaño de archivos</label>
+        </div>
+
+        <!-- Pregunta 2 -->
+        <div class="question" data-correcta="b">
+            <p>2. Un hash se caracteriza por:</p>
+            <label><input type="radio" name="p2" value="a" required> Ser reversible</label>
+            <label><input type="radio" name="p2" value="b"> No ser reversible</label>
+            <label><input type="radio" name="p2" value="c"> Cambiar según el navegador</label>
+            <label><input type="radio" name="p2" value="d"> Requerir conexión a Internet</label>
+        </div>
+
+        <!-- Pregunta 3 -->
+        <div class="question" data-correcta="b">
+            <p>3. ¿Qué herramienta permite crear copias de seguridad de una base de datos local?</p>
+            <label><input type="radio" name="p3" value="a" required> Paint</label>
+            <label><input type="radio" name="p3" value="b"> phpMyAdmin</label>
+            <label><input type="radio" name="p3" value="c"> Bloc de notas</label>
+            <label><input type="radio" name="p3" value="d"> Word</label>
+        </div>
+
+        <!-- Pregunta 4 -->
+        <div class="question" data-correcta="a">
+            <p>4. ¿Cuál es un tipo común de backup?</p>
+            <label><input type="radio" name="p4" value="a" required> Comprimido ZIP</label>
+            <label><input type="radio" name="p4" value="b"> HTML</label>
+            <label><input type="radio" name="p4" value="c"> Captura de pantalla</label>
+            <label><input type="radio" name="p4" value="d"> GIF</label>
+        </div>
+
+        <!-- Pregunta 5 -->
+        <div class="question" data-correcta="b">
+            <p>5. Los sitios HTTPS cuentan con:</p>
+            <label><input type="radio" name="p5" value="a" required> Publicidad integrada</label>
+            <label><input type="radio" name="p5" value="b"> Certificado SSL</label>
+            <label><input type="radio" name="p5" value="c"> Menor velocidad</label>
+            <label><input type="radio" name="p5" value="d"> Más imágenes</label>
+        </div>
+
+        <!-- Pregunta 6 -->
+        <div class="question" data-correcta="b">
+            <p>6. GitHub Pages utiliza SSL…</p>
+            <label><input type="radio" name="p6" value="a" required> Solo si el usuario lo solicita</label>
+            <label><input type="radio" name="p6" value="b"> Automáticamente</label>
+            <label><input type="radio" name="p6" value="c"> Nunca</label>
+            <label><input type="radio" name="p6" value="d"> Depende del navegador</label>
+        </div>
+
+        <!-- Pregunta 7 -->
+        <div class="question" data-correcta="b">
+            <p>7. Una interfaz segura:</p>
+            <label><input type="radio" name="p7" value="a" required> Elimina formularios</label>
+            <label><input type="radio" name="p7" value="b"> Valida la entrada del usuario</label>
+            <label><input type="radio" name="p7" value="c"> Muestra datos sin restricción</label>
+            <label><input type="radio" name="p7" value="d"> Desactiva JavaScript</label>
+        </div>
+
+        <!-- Pregunta 8 -->
+        <div class="question" data-correcta="b">
+            <p>8. El mantenimiento preventivo busca…</p>
+            <label><input type="radio" name="p8" value="a" required> Reparar errores existentes</label>
+            <label><input type="radio" name="p8" value="b"> Evitar fallos futuros</label>
+            <label><input type="radio" name="p8" value="c"> Eliminar actualizaciones</label>
+            <label><input type="radio" name="p8" value="d"> Desinstalar programas</label>
+        </div>
+
+        <!-- Pregunta 9 -->
+        <div class="question" data-correcta="b">
+            <p>9. ¿Cuál es una buena práctica de actualización?</p>
+            <label><input type="radio" name="p9" value="a" required> No documentar cambios</label>
+            <label><input type="radio" name="p9" value="b"> Conservar versiones anteriores</label>
+            <label><input type="radio" name="p9" value="c"> Trabajar solo en archivos finales</label>
+            <label><input type="radio" name="p9" value="d"> Desactivar GitHub</label>
+        </div>
+
+        <!-- Pregunta 10 -->
+        <div class="question" data-correcta="b">
+            <p>10. ¿Qué archivo es adecuado para un backup del proyecto web?</p>
+            <label><input type="radio" name="p10" value="a" required> .jpg</label>
+            <label><input type="radio" name="p10" value="b"> .zip</label>
+            <label><input type="radio" name="p10" value="c"> .mp4</label>
+            <label><input type="radio" name="p10" value="d"> .gif</label>
+        </div>
+
+        <button type="submit">Enviar Evaluación</button>
+    </form>
+
+    <div id="resultado"></div>
+</div>
+
+<script>
+    const scriptURL = 'PEGAR_AQUI_LA_URL_DE_GOOGLE_APPS_SCRIPT'; // Mantén tu URL aquí
+
+    // Función auxiliar para barajar arreglos (Algoritmo Fisher-Yates)
+    function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+    }
+
+    // Al cargar la página, aleatorizamos tanto las preguntas como sus respuestas
+    window.addEventListener('DOMContentLoaded', () => {
+        const form = document.getElementById('evaluacionForm');
+        const submitButton = form.querySelector('button[type="submit"]');
+        const questionElements = Array.from(form.querySelectorAll('.question'));
+
+        // 1. Barajar las respuestas dentro de cada pregunta
+        questionElements.forEach(question => {
+            const labels = Array.from(question.querySelectorAll('label'));
+            shuffleArray(labels);
+            // Reinsertar las etiquetas barajadas debajo de la pregunta
+            labels.forEach(label => question.appendChild(label));
+        });
+
+        // 2. Barajar el orden de las preguntas en el formulario
+        shuffleArray(questionElements);
+        questionElements.forEach(q => {
+            form.insertBefore(q, submitButton);
+        });
+    });
+
+    // Manejo del envío del formulario y calificación automática
+    document.getElementById('evaluacionForm').addEventListener('submit', e => {
+        e.preventDefault();
+        
+        let formData = new FormData(e.target);
+        let nota = 0;
+        const questions = document.querySelectorAll('.question');
+
+        // Calificamos comparando la opción seleccionada con el atributo 'data-correcta' de cada pregunta
+        questions.forEach(q => {
+            const inputName = q.querySelector('input[type="radio"]').name;
+            const respuestaCorrecta = q.getAttribute('data-correcta');
+            const respuestaEstudiante = formData.get(inputName);
+
+            if (respuestaEstudiante === respuestaCorrecta) {
+                nota += 1; // Suma 1 punto si la respuesta es correcta
+            }
+        });
+
+        // Agregar la nota calculada a los datos a enviar a Google Sheets
+        formData.append('calificacion', nota);
+
+        // Enviar datos mediante fetch hacia Google Apps Script
+        fetch(scriptURL, { method: 'POST', body: formData })
+            .then(response => {
+                document.getElementById('resultado').innerHTML = `<span style="color: green;">¡Evaluación enviada con éxito! Su calificación es: ${nota} / 10</span>`;
+                document.getElementById('evaluacionForm').reset();
+            })
+            .catch(error => {
+                console.error('Error!', error.message);
+                document.getElementById('resultado').innerHTML = `<span style="color: red;">Error al enviar. Inténtalo de nuevo.</span>`;
+            });
+    });
+</script>
+
+</body>
+</html>
